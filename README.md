@@ -15,16 +15,25 @@ Users can select any week to compare with the previous one and explore key perfo
 
 **Viewing tip:** Use the scrollbars to locate the Full Screen button in the bottom-right corner. Then adjust your browser's zoom level (Ctrl + / Ctrl -) to fit the dashboard to your screen.
 
+
 ## Dataset
 
-The synthetic dataset includes the following fields:
+The project uses a synthetic dataset containing 13 months of daily order and delivery performance data across 8 cities.
 
-- **City:** City where orders were placed
-- **Day:** Order date
-- **Week Number:** Week identifier
-- **Orders Count:** Number of orders
-- **Average Delivery Time (minutes):** Average delivery duration
-- **Late Orders Percentage:** Percentage of late deliveries
+The dataset consists of the following 7 columns:
+
+| Column | Description |
+|---|---|
+| `CITY` | City where orders were placed |
+| `YEAR` | Year of the recorded data |
+| `MONTH` | Month of the recorded data |
+| `DAY` | Day of the month |
+| `ORDERS_COUNT` | Total number of orders |
+| `AVG_DELIVERY_TIME_MINUTES` | Average delivery time in minutes |
+| `ORDERS_LATE_PERCENTAGE` | Percentage of orders delivered late |
+
+These fields are used to calculate and visualize week-over-week changes in order demand and delivery performance.
+
 
 ## Key Metrics
 
